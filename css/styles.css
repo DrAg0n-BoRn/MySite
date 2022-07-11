@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(218, 251, 244);
+}
+hr {
+    border-style: none;
+    border-top-width: 8px;
+    border-top-color: burlywood;
+    border-top-style: dotted;
+    background-color: rgb(218, 251, 244);
+    width: 10%;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #54BAB9;
+}
