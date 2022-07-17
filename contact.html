@@ -14,28 +14,35 @@
 </head>
 
 <body>
-    <h2>My Contact Information</h2>
-    <ul>
-        <li><a href="mailto:luigiloza@gmail.com">Email:</a> luigiloza@gmail.com</li>
-    </ul>
-    <hr size="2" noshade="">
-    
-    <h3>Get in Touch</h3>
-    <form action="mailto:luigiloza@gmail.com" enctype="text/plain" method="post">
-        <label for="F01">Your name:</label>
-        <input type="text" id="F01" name="Your Name">
-        <br>
-        <label for="F02">Your email:</label>
-        <input type="email" id="F02" name="Your Email">
-        <br>
-        <label for="F03">Message:</label><br>
-        <textarea name="Your Message" id="F03" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" id="F04">
-    </form>
+    <div class="header-container">
+        <h2>Get in Touch</h2>
+        <h5><a href="mailto:luigiloza@gmail.com">Email:</a> luigiloza@gmail.com</h5>
+    </div>
     <hr>
 
-    <a href="./index.html"> ⬅️ Go Back</a>
+    <div class="middle-container">
+        
+        <form action="mailto:luigiloza@gmail.com" enctype="text/plain" method="post" id="form21">
+            <label for="F01">Your name:</label>
+            <input type="text" id="F01" name="Your Name">
+            <br>
+            <label for="F02">Your email:</label>
+            <input type="email" id="F02" name="Your Email">
+            <br>
+            <label for="F03">Message:</label><br>
+            <textarea name="Your Message" id="F03" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" id="F04">
+        </form>
+    </div>
+    <hr>
+
+    <div class="middle-container footer-container">
+        <img src="./media/arrow.png" alt="" class="back-arrow">
+        <h5>
+            <a href="./index.html">Go back</a>
+        </h5>
+    </div>
 
 </body>
 </html>

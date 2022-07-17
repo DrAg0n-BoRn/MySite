@@ -1,6 +1,9 @@
 /* --- Tag Selectors --- */
 html {
     font-size: 16px;
+    line-height: 1.5;
+    width: 60%;
+    margin: auto;
 }
 
 body {
@@ -12,16 +15,16 @@ body {
 h1 {
     margin: 2% 0 1% 0;
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1% 0 1% 0;
 }
 
 h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin: 1% 0 1% 0;
 }
 
@@ -40,38 +43,79 @@ h6 {
     margin: 1% 0 1% 0;
 }
 
+h1, h2, h3 {
+    color: #A97155;
+}
+
+h4, h5, h6 {
+    color: #BE8C63;
+}
+
+a {
+    color: #E3CAA5;
+}
+
 p {
     font-size: 1rem;
+    color: #5C3D2E;
 }
 
 hr {
-    width: 30%;
+    width: 50%;
     border-style: dashed;
     border-width: 2px;
-    border-color: #DAB88B;
+    border-color: #A97155;
+    margin-block: 1%;
 }
 
 ul, ol {
     text-align: left;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: #5C3D2E;
+}
+
+td, th {
+    padding: 10px;
+    border-color: #A97155;
+    border-top: dotted;
+}
+
+
 /* --- Class Selectors --- */
+
 .header-container {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .middle-container {
     text-align: center;
 }
 
+.footer-container {
+    width: 10%;
+    margin: 0 auto;
+}
+
 .profile {
-    padding-top: 1%;
+    padding: 1% 0 1% 0;
 }
 
 .skills {
-    padding-top: 1%;
+    padding: 1%;
     display: inline-block;
+}
+
+.skill-icon {
+    position: relative;
+    top: 1rem;
+    width: 150px;
+    margin: 1%;
 }
 
 .contact-me {
@@ -81,10 +125,50 @@ ul, ol {
 
 .top-cloud {
     position: relative;
-    left: 15%;
+    left: 16%;
 }
 
 .bottom-cloud {
     position: absolute;
-    left: 30%;
+    float: left;
 }
+
+.mountain-cloud {
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+
+.back-arrow {
+    width: 24px;
+    float: left;
+    margin: 4% 0;
+}
+
+.resume-photo {
+    width: 75%;
+}
+
+.centered {
+    margin-left : auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.no-border {
+    border: none;
+}
+
+/* --- ID Selectors --- */
+
+#form21 {
+    display: inline-block;
+    margin-left: auto;
+    text-align: left;
+    color: #5C3D2E;
+}
+
+input#F04 {
+    width: 100%;
+    color: #5C3D2E;
+}
+
