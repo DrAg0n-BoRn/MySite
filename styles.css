@@ -99,7 +99,7 @@ td, th {
 
 .footer-container {
     width: 10%;
-    margin: 0 auto;
+    margin: 0 auto 5% auto;
 }
 
 .profile {
@@ -166,6 +166,28 @@ td, th {
     color: #5C3D2E;
 }
 
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #5C3D2E;
+    font-size: 1.5rem;
+    background: #A97155;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-bottom: 1%;
+  }
+  
+  .btn:hover {
+    background: #BE8C63;
+    background-image: -webkit-linear-gradient(top, #BE8C63, #E3CAA5);
+    background-image: -moz-linear-gradient(top, #BE8C63, #E3CAA5);
+    background-image: -ms-linear-gradient(top, #BE8C63, #E3CAA5);
+    background-image: -o-linear-gradient(top, #BE8C63, #E3CAA5);
+    background-image: linear-gradient(to bottom, #BE8C63, #E3CAA5);
+    text-decoration: none;
+  }
+
 /* --- ID Selectors --- */
 
 #form21 {
@@ -176,7 +198,7 @@ td, th {
 }
 
 input#F04 {
-    width: 100%;
-    color: #5C3D2E;
+    display: list-item;
+    margin-left: auto;
+    margin-right: auto;
 }
-
