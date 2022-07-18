@@ -52,7 +52,13 @@ h4, h5, h6 {
 }
 
 a {
+    color: #BE8C63;
+    text-decoration: underline dotted #E3CAA5;
+}
+
+a:hover {
     color: #E3CAA5;
+    text-decoration: none;
 }
 
 p {
