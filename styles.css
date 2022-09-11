@@ -44,16 +44,6 @@ h4, h5, h6 {
     color: #BE8C63;
 }
 
-a {
-    color: #BE8C63;
-    text-decoration: underline dotted #E3CAA5;
-}
-
-a:hover {
-    color: #E3CAA5;
-    text-decoration: none;
-}
-
 p {
     font-size: 1rem;
     color: #5C3D2E;
@@ -93,6 +83,17 @@ td, th {
     margin-left: auto;
     margin-right: auto;
 }
+
+.a-custom {
+    color: #BE8C63;
+    text-decoration: underline dotted #E3CAA5;
+}
+
+.a-custom:hover {
+    color: #E3CAA5;
+    text-decoration: none;
+}
+
 
 .header-container {
     text-align: center;
@@ -149,7 +150,7 @@ td, th {
 
 .back-arrow {
     width: 24px;
-    float: left;
+    /* float: left; */
     margin: 4% 0;
 }
 
