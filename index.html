@@ -15,45 +15,62 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<body>
-  <div class="header-container container">
-    <img src="media/cloud.png" alt="cloud-image" class="top-cloud">
-    <h1>I'm Karl</h1>
+<body class="body-custom">
+  <div class="header-container container-fluid">
+    <img src="media/cloud.png" alt="cloud-image" class="top-cloud img-fluid">
+    <h1 class="top-margin">I'm Karl</h1>
     <h6>a developer.</h6>
-    <div class="mountain-cloud">
-      <img src="media/cloud.png" alt="cloud-image" class="bottom-cloud">
-      <img src="media/mountain.png" alt="mountain-image">
+    <div class="mountain-cloud container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="media/cloud.png" alt="cloud-image" class="bottom-cloud img-fluid">
+          <img src="media/mountain.png" alt="mountain-image" class="img-fluid">
+        </div>
+      </div>
+      
     </div>
   </div>
     
-  <div class="middle-container container">
+  <div class="middle-container container-fluid">
     <div class="profile">
       <h2>Hello, world!</h2>
-      <h6>I am passionate for science and technology.</h6>
+      <h5>I am passionate about science and technology.</h5>
     </div>
-    <hr>
+    <hr class="hr-custom">
 
-    <img src="./media/electrical-circuit.png" alt="Circuit" class="skill-icon" id="img21">
-    <div class="skills">
-      <h2>My skills</h2>
-      <h6><ul>
-        <li>TESOL certification.</li>
-        <li>STEM instructor.</li>
-        <li>STEM curriculum developer.</li>
-        <li>Electronics.</li>
-        <li>Programming.</li>
-        <li>Python, HTML, CSS.</li>
-      </ul></h6>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h2>My skills</h2>
+        </div>
+      </div>
+      <div class="row justify-content-sm-center">
+        <div class="col-sm-2">
+          <img src="./media/electrical-circuit.png" alt="Circuit" class="skill-icon img-fluid" id="img21">
+        </div>
+        <div class="col-sm-auto">
+          <h5 class="skills">
+            TESOL certification.<br>
+            STEM instructor.<br>
+            STEM curriculum developer.<br>
+            Electronics & Programming<br>
+            Python, HTML, CSS.
+          </h5>
+        </div>
+        <div class="col-sm-2">
+          <img src="./media/stem.png" alt="STEM" class="skill-icon img-fluid" id="img22">
+        </div>
+      </div>
     </div>
-    <img src="./media/stem.png" alt="STEM" class="skill-icon" id="img22">
-    <hr>
+
+    <hr class="hr-custom">
 
     <div class="contact-me">
       <form action="./resume.html" name="to-resume">
-        <input type="submit" value="My resume" class="btn">
+        <input type="submit" value="My resume" class="btn-custom">
       </form>
       <form action="./contact.html" name="to-contact">
-        <input type="submit" value="Contact me" class="btn">
+        <input type="submit" value="Contact me" class="btn-custom">
       </form>
     </div>
   </div>

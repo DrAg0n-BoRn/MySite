@@ -2,14 +2,7 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    width: 60%;
     margin: auto;
-}
-
-body {
-    margin: 0px;
-    font-family: 'Didact Gothic', sans-serif;
-    background-color: #FFFBE9;
 }
 
 h1 {
@@ -66,14 +59,6 @@ p {
     color: #5C3D2E;
 }
 
-hr {
-    width: 50%;
-    border-style: dashed;
-    border-width: 2px;
-    border-color: #A97155;
-    margin-block: 1%;
-}
-
 ul, ol {
     text-align: left;
 }
@@ -94,6 +79,21 @@ td, th {
 
 /* --- Class Selectors --- */
 
+.body-custom {
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: #FFFBE9;
+}
+
+.hr-custom {
+    width: 50%;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #A97155;
+    margin-block: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header-container {
     text-align: center;
     padding-top: 2%;
@@ -112,14 +112,16 @@ td, th {
     padding: 1% 0 1% 0;
 }
 
+.top-margin {
+    margin-top: 1%;
+}
+
 .skills {
-    padding: 1%;
-    display: inline-block;
+    margin-top: 2%;
+    padding: 2% 0;
 }
 
 .skill-icon {
-    position: relative;
-    top: 1rem;
     width: 150px;
     margin: 1%;
 }
@@ -132,6 +134,7 @@ td, th {
 .top-cloud {
     position: relative;
     left: 16%;
+    padding-bottom: 1%;
 }
 
 .bottom-cloud {
@@ -172,7 +175,7 @@ td, th {
     color: #5C3D2E;
 }
 
-.btn {
+.btn-custom {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
@@ -184,7 +187,7 @@ td, th {
     margin-bottom: 1%;
   }
   
-  .btn:hover {
+  .btn-custom:hover {
     background: #BE8C63;
     background-image: -webkit-linear-gradient(top, #BE8C63, #E3CAA5);
     background-image: -moz-linear-gradient(top, #BE8C63, #E3CAA5);
