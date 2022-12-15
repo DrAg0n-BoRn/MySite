@@ -47,7 +47,7 @@ h4, h5, h6 {
 
 p {
     font-size: 1rem;
-    color: #5C3D2E;
+    color: #5f3f2f;
 }
 
 ul, ol {
@@ -76,7 +76,7 @@ td, th {
 }
 
 .hr-custom {
-    width: 50%;
+    width: 40%;
     border-style: dashed;
     border-width: 2px;
     border-color: #A97155;
@@ -116,6 +116,7 @@ td, th {
 
 .top-margin {
     margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .skills {
