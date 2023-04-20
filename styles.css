@@ -200,6 +200,13 @@ td, th {
     text-decoration: none;
   }
 
+  .top-border {
+    width: 80%;
+    border-top: #E3CAA5;
+    border-top-style: dashed;
+    border-top-width: 0.1rem;
+  }
+
 /* --- ID Selectors --- */
 
 #form21 {
