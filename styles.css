@@ -67,6 +67,26 @@ td, th {
     border-top: dotted;
 }
 
+progress {
+    /* Changes the size of the progress bar */
+    /* width: 50%; */
+    height: 2ex;
+    margin: auto;
+
+    /* Removes the default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    /* Changes the background color of the progress bar */
+    background-color: #E3CAA5;
+}
+
+progress::-webkit-progress-value {
+    /* Changes the color of the actual progress indicator */
+    background-color: #A97155;
+}
 
 /* --- Class Selectors --- */
 
@@ -207,10 +227,20 @@ td, th {
     border-top-width: 0.1rem;
   }
 
-.table-fixed {
-    display: block;
-    table-layout: fixed;
+.wide-column {
+    width: 80%;
 }
+
+.stick-top {
+    text-align: right;
+    vertical-align: top;
+}
+
+/* .compact-div {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+} */
 
 /* --- ID Selectors --- */
 
