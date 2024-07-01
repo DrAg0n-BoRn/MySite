@@ -207,6 +207,11 @@ td, th {
     border-top-width: 0.1rem;
   }
 
+.table-fixed {
+    display: block;
+    table-layout: fixed;
+}
+
 /* --- ID Selectors --- */
 
 #form21 {
