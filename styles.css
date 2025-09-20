@@ -1,258 +1,317 @@
-/* --- Tag Selectors --- */
-
+/* --- Global Styles & Fonts --- */
 html {
     font-size: 16px;
-    line-height: 1.5;
-    margin: auto;
+    line-height: 1.6;
 }
 
-h1 {
-    margin: 2% 0 1% 0;
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
+body {
+    font-family: 'Inter', 'Didact Gothic', sans-serif;
+    background-color: #fdfaf5; /* A slightly softer white */
+    color: #3d3d3d; /* Dark grey for text for better readability */
+    margin: 0;
+    padding: 20px;
 }
 
-h2 {
-    font-size: 2.5rem;
-    margin: 1% 0 1% 0;
-}
-
-h3 {
-    font-size: 2rem;
-    margin: 1% 0 1% 0;
-}
-
-h4 {
-    font-size: 1.5rem;
-    margin: 1% 0 1% 0;
-}
-
-h5 {
-    font-size: 1.3rem;
-    margin: 1% 0 1% 0;
-}
-
-h6 {
-    font-size: 1.1rem;
-    margin: 1% 0 1% 0;
-}
-
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin: 0.5em 0;
     color: #A97155;
 }
 
-h4, h5, h6 {
+h1 { font-size: 2.8rem; font-family: 'Great Vibes', cursive; }
+h2 { font-size: 1.8rem; text-transform: uppercase; letter-spacing: 1px; }
+h3 { font-size: 1.5rem; color: #BE8C63; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1rem; font-weight: bold; }
+
+a {
     color: #BE8C63;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-p {
+a:hover {
+    color: #A97155;
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* --- Layout Container --- */
+.resume-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Header Section --- */
+.resume-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the photo circular */
+    object-fit: cover; /* Prevents image distortion */
+    border: 4px solid #E3CAA5;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    margin: 0 10px;
+}
+
+.summary {
+    max-width: 700px;
+    margin: 15px auto;
     font-size: 1rem;
     color: #5f3f2f;
 }
 
-ul, ol {
-    text-align: left;
+/* --- Main Content Sections --- */
+.section-title {
+    border-bottom: 2px solid #E3CAA5;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    color: #5C3D2E;
+.entry {
+    margin-bottom: 25px;
 }
 
-td, th {
-    padding: 10px;
-    border-color: #A97155;
-    border-top: dotted;
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /* margin-bottom: 5px; */
+    margin-bottom: 0; /* Remove space between title and subtitle */
 }
 
-progress {
-    /* Changes the size of the progress bar */
-    /* width: 50%; */
-    height: 2ex;
-    margin: auto;
-
-    /* Removes the default appearance */
-    -webkit-appearance: none;
-    appearance: none;
+.entry-title {
+    margin: 0;
 }
 
-progress::-webkit-progress-bar {
-    /* Changes the background color of the progress bar */
-    background-color: #E3CAA5;
+.entry-meta {
+    font-style: normal;
+    color: #5C3D2E; /* A darker, richer brown from the theme */
+    font-size: 0.95rem; /* Slightly larger for better readability */
+    font-weight: 500; /* Makes the font a bit bolder */
+    white-space: nowrap; /* Prevents date/location from wrapping */
+    padding-left: 15px; /* Adds space between title and meta */
+    text-align: right; /* Ensures it stays aligned to the right */
+    display: flex;
+    gap: 8px; /* Creates space between location and date */
+    align-items: baseline;
 }
 
-progress::-webkit-progress-value {
-    /* Changes the color of the actual progress indicator */
-    background-color: #A97155;
+.project-links {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* --- Class Selectors --- */
-
-.body-custom {
-    font-family: 'Didact Gothic', sans-serif;
-    background-color: #FFFBE9;
+/* --- Skills Section --- */
+.skill-category h5 {
+    margin-bottom: 10px;
 }
 
-.hr-custom {
-    width: 40%;
-    border-style: dashed;
-    border-width: 2px;
-    border-color: #A97155;
-    margin-block: 1%;
-    margin-left: auto;
-    margin-right: auto;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    margin-bottom: 30px;
 }
 
-.a-custom {
-    color: #BE8C63;
-    text-decoration: underline dotted #E3CAA5;
+/* On larger screens, use 4 columns for a better layout */
+@media (min-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
-.a-custom:hover {
-    color: #E3CAA5;
-    text-decoration: none;
-}
-
-
-.header-container {
-    text-align: center;
-    padding-top: 2%;
-}
-
-.middle-container {
-    text-align: center;
-}
-
-.footer-container {
-    width: 10%;
-    margin: 0 auto 5% auto;
-}
-
-.profile {
-    padding: 1% 0 1% 0;
-}
-
-.top-margin {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.skills {
-    margin-top: 2%;
-    padding: 2% 0;
-}
-
-.skill-icon {
-    width: 150px;
-    margin: 1%;
-}
-
-.contact-me {
-    padding-top: 1%;
-    padding-bottom: 3%;
-}
-
-.top-cloud {
-    position: relative;
-    left: 16%;
-    padding-bottom: 1%;
-}
-
-.bottom-cloud {
-    position: absolute;
-    float: left;
-}
-
-.mountain-cloud {
-    width: 60%;
-    margin: 0 auto 0 auto;
-}
-
-.back-arrow {
-    width: 24px;
-    /* float: left; */
-    margin: 4% 0;
-}
-
-.resume-photo {
-    width: 75%;
-}
-
-.centered {
-    margin-left : auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.no-border {
-    border: none;
-}
-
-.soft-skills {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+.skills-category h5 {
+    margin-bottom: 12px;
     font-size: 1rem;
+    color: #A97155;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background-color: #f5f0e8;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5C3D2E;
+    border: 1px solid #E3CAA5;
+}
+
+/* --- Language Skills Section --- */
+.language-skills {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f0e9df; /* Subtle separator line */
+}
+
+.language-skills h5 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #BE8C63;
+    margin-bottom: 15px;
+}
+
+.language-skills p {
+    color: #5f3f2f;
+    line-height: 1.8;
+}
+
+.language-item:not(:last-child)::after {
+    content: '•'; /* A dot separator */
+    color: #d3c5b9;
+    margin: 0 12px;
+}
+
+
+/* --- General Link Styling for Resume --- */
+.resume-container a {
+    color: #BE8C63; /* Sets the link color to theme color */
+    text-decoration: none; /* Removes the underline from all links by default */
+    transition: color 0.3s;
+}
+
+.resume-container a:hover {
+    color: #A97155; /* Darker theme color on hover */
+    text-decoration: underline; /* Adds underline ONLY on hover to the text */
+}
+
+/* --- Icon & Link Styling (Refined) --- */
+.contact-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Adds space between icon and text */
+    margin: 0 5px;
+    text-decoration: none; /* Explicitly remove underline for header links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* This specifically prevents the icon itself from ever being underlined */
+.contact-info a i {
+    text-decoration: none !important;
+}
+
+.contact-info .separator {
+    color: #ccc;
+    margin: 0 5px;
+}
+
+/* --- Project Link Tags --- */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-link-tag {
+    background-color: #f5f0e8; /* A light background */
+    border-radius: 15px; /* Pill shape */
+    padding: 5px 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #E3CAA5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-link-tag:hover {
+    background-color: #A97155; /* Theme color on hover */
+    color: #ffffff; /* White text on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* --- Publication Link Icon --- */
+.entry p a i {
+    font-size: 0.8em; /* Makes the icon slightly smaller than the text */
+    margin-left: 4px; /* Adds a little space after the link text */
+    vertical-align: super; /* Aligns the icon nicely with the top of the text */
+}
+
+
+/* --- Styling for Two-Line Format --- */
+
+.entry-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #BE8C63; /* Use your secondary theme color */
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+/* Adds a separator line after the location */
+.entry-location::after {
+    content: '|';
+    color: #d3c5b9; /* A light, subtle separator color */
+    margin-left: 8px;
+    font-weight: normal;
+}
+
+/* --- Continuous Education & Awards Lists --- */
+.education-list ul,
+.awards-list ul {
+    list-style-type: none; /* Removes the default bullet points */
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.education-list li,
+.awards-list li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 12px;
+    color: #5f3f2f;
+}
+
+/* Creates a custom, themed bullet point */
+.education-list li::before,
+.awards-list li::before {
+    content: '■'; /* You can also use '●' or '◆' */
+    position: absolute;
+    left: 0;
+    top: 0px;
+    color: #BE8C63; /* Use a theme color for the bullet */
+    font-size: 0.8em;
+}
+
+.awards-list strong {
     color: #5C3D2E;
 }
 
-.btn-custom {
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    color: #5C3D2E;
-    font-size: 1.5rem;
-    background: #A97155;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    margin-bottom: 1%;
-  }
-  
-  .btn-custom:hover {
-    background: #BE8C63;
-    background-image: -webkit-linear-gradient(top, #BE8C63, #E3CAA5);
-    background-image: -moz-linear-gradient(top, #BE8C63, #E3CAA5);
-    background-image: -ms-linear-gradient(top, #BE8C63, #E3CAA5);
-    background-image: -o-linear-gradient(top, #BE8C63, #E3CAA5);
-    background-image: linear-gradient(to bottom, #BE8C63, #E3CAA5);
-    text-decoration: none;
-  }
-
-  .top-border {
-    width: 80%;
-    border-top: #E3CAA5;
-    border-top-style: dashed;
-    border-top-width: 0.1rem;
-  }
-
-.wide-column {
-    width: 80%;
-}
-
-.stick-top {
-    text-align: right;
-    vertical-align: top;
-}
-
-/* .compact-div {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-} */
-
-/* --- ID Selectors --- */
-
-#form21 {
-    display: inline-block;
-    margin-left: auto;
-    text-align: left;
-    color: #5C3D2E;
-}
-
-input#F04 {
-    display: list-item;
-    margin-left: auto;
-    margin-right: auto;
+.awards-list em {
+    font-style: normal; /* Keep award titles from being italicized by default */
 }
